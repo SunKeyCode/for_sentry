@@ -20,6 +20,11 @@ def example():
     pass
 
 
+@app.route("/")
+def index():
+    return "Main page"
+
+
 @app.route('/debug-sentry')
 def trigger_error():
     division_by_zero = 1 / 0
